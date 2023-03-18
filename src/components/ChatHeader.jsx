@@ -11,6 +11,7 @@ function ChatHeader({ user }) {
         removeCookie('UserId');
         removeCookie('AuthToken');
         removeCookie('Email');
+        localStorage.removeItem('token')
         window.location.reload();
         navigate('/');;
 

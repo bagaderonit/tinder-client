@@ -8,8 +8,7 @@ import { useCookies } from 'react-cookie';
 import io from 'socket.io-client'
 
 export const LoadingContext = createContext();
-// export const HOST = 'https://tinder2-server.herokuapp.com'
-export const HOST = 'http://localhost:8001';
+export const HOST = 'https://tinder-backend-ecv4.onrender.com'
 export const socket = io.connect(HOST)
 const App = () => {
   const [cookie] = useCookies();
